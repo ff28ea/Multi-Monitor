@@ -184,7 +184,7 @@ int main()
     
         auto screen_width = Monitors[CurrentMonitors].Width;
         auto screen_height = Monitors[CurrentMonitors].Height;
-        std::string comboPreview = std::format("{}x{} (Monitor{})", screen_width, screen_width, CurrentMonitors);
+        std::string comboPreview = std::format("{}x{} (Monitor{})", screen_width, screen_height, CurrentMonitors);
         if (ImGui::BeginCombo("Monitors", comboPreview.c_str()))
         {
             for (int i = 0; i < Monitors.size(); i++) {
